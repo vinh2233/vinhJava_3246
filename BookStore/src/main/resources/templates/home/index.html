@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>ỨNG DỤNG QUẢN LÝ SÁCH</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      color: #555;
+      font-family: 'Arial', sans-serif;
+    }
+    .navbar {
+      margin-bottom: 20px;
+      background: #f8f9fa;
+      border-bottom: 2px solid #dee2e6;
+    }
+    .navbar .container-fluid {
+      display: flex;
+      justify-content: center; /* Center the brand horizontally */
+    }
+    .nav-brand {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+      text-decoration: none;
+    }
+    .nav-brand:hover {
+      color: #0056b3;
+    }
+    .container {
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 {
+      color: #007bff;
+    }
+    .footer {
+      margin-top: 50px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.9);
+      color: #555;
+      border-top: 2px solid #dee2e6;
+    }
+  </style>
+  <th:block th:replace="layout::link-css"></th:block>
+</head>
+<body>
+<th:block th:replace="layout::header"></th:block>
+<div class="container">
+  <div class="navbar navbar-light animate__animated animate__fadeInDown">
+    <div class="container-fluid">
+      <a class="nav-brand" href="/">TRANG CHỦ ỨNG DỤNG QUẢN LÝ SÁCH</a>
+    </div>
+  </div>
+  <h1 class="animate__animated animate__zoomIn">Chào mừng đến với ứng dụng quản lý sách</h1>
+</div>
+<div class="footer text-center animate__animated animate__fadeInUp">
+  <p>&copy; 2024 ỨNG DỤNG QUẢN LÝ SÁCH. All rights reserved.</p>
+</div>
+<th:block th:replace="layout::footer"></th:block>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
